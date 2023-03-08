@@ -8,16 +8,31 @@
     width: 30%;
   }
 
+  %title {
+      @include flexboxColumn(2vh);
+      @include flexCenter; 
+
+    > p {
+        text-align: center;
+    }
+  }
+
+  %content {
+      @include flexboxColumn(3vh);
+      align-items: center;
+  }
+
   .row {
       align-items: center;
       row-gap: 5vh;
 
-      > article {
-          @include flexboxColumn(2vh);
-          @include flexCenter; 
+      > article,
+      .skills > article {
+          @extend %title; 
       }
 
-      > section {
+      > section,
+      .skills {
         @include flexboxColumn(3vh);
         align-items: center;
       }     
@@ -88,4 +103,74 @@
         width: 100%;
     }
   }
+
+  // TEAM
+
+  // TEAM - GALLERY
+
+  // TEAM - SKILLS
+  .skills {
+      @include flexboxColumn(5vh);
+      > article {
+          @extend %title;
+          > p {
+            font-style: italic;
+            font-size: 14px;
+            width: 98%
+          }
+      }
+
+      aside {
+          width: 96%
+      }
+
+      > section,
+      aside {
+          @extend %content;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-style: italic;
+        text-transform: uppercase;
+        color: gray;
+        font-weight: 500;
+      }
+
+      ul {
+          @include flexboxColumn(2vh);
+          width: 96%;
+      }
+
+      li {
+          display: flex;
+          width: 100%;
+          height: 5vh;
+          background-color: gainsboro;
+      }
+
+      li:first-child > h6 {
+          width: 90%;
+      }
+
+      li:nth-child(3) > h6 {
+          width: 70%;
+      }
+
+      h6 {
+          display: flex;
+          align-items: center;
+          width: 80%;
+          height: 100%;
+          background-color: $defaultColor; 
+          font-size: 16px;
+      }
+
+      small {
+          padding-left: 2vh;
+          text-transform: uppercase;
+          color: whitesmoke;
+      }
+  }
+  
 }
