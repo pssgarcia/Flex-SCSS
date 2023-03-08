@@ -4,8 +4,71 @@
     padding-top: 5vh;
   }
 
-  nav > ul {
-    display: none;
+  // NAVIGATION MENU
+  nav {
+      background-color: white;
+      width: 90%;
+      height: 10vh;
+      padding-left: 5%;
+      padding-right: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      
+      h2 {
+        color: $defaultColor;
+        font-size: 30px;
+      }
+      
+      > article {
+          display: flex;
+          align-items: center;
+          column-gap: 4vh;
+      }
+
+      > ul {
+          display: none;
+      }
+
+      i {
+          padding: 10%;
+          font-size: 50px;
+          background-color: $defaultColor;
+          color: white;
+      }
+  }
+
+  details {
+      position: absolute;
+      width: 90%;
+      text-align: right;
+      > ul {
+          position: absolute;
+          width: 100%;
+          list-style-type: none;
+          background-color: white;
+          row-gap: 1vh;
+      }
+
+      li {
+          display: flex;
+      }
+
+      a {
+          width: 100%;
+          color: dimgray;
+          padding: 1%;
+          text-transform: uppercase;
+          font-weight: 700;
+      }
+    }
+    
+    summary {
+      background-color: $defaultColor;
+      color: white;
+      padding: 2vh;
+      font-size: 25px;
   }
 
   header {
@@ -16,6 +79,7 @@
         background-color: rgba(50, 50, 50, 0.59);
         height: 100%;
         width: 100%;
+
         > ul {
             display: none;
         }
@@ -137,8 +201,6 @@
         width: 100%;
     }
   }
-
-  // TEAM
 
   // TEAM - GALLERY
   .team-gallery {
