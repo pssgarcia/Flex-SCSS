@@ -1,11 +1,11 @@
-@mixin flexboxColumn {
+@mixin flexboxColumn($row-gap) {
   display: flex;
   flex-direction: column;
+  row-gap: $row-gap; 
 }
 
-@mixin flexboxCenter ($align,$justify) {
-  display: flex;
-  align-items: $align;
-  justify-content: $justify;
+@mixin flexCenter {
+  justify-content: center;
+  align-items: center;
 }
 

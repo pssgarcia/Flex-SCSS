@@ -1,0 +1,91 @@
+@media (min-width: $mobileScreen) {
+  main {
+    row-gap: 10vh;
+    padding-top: 5vh;
+  }
+  
+  img {
+    width: 30%;
+  }
+
+  .row {
+      align-items: center;
+      row-gap: 5vh;
+
+      > article {
+          @include flexboxColumn(2vh);
+          @include flexCenter; 
+      }
+
+      > section {
+        @include flexboxColumn(3vh);
+        align-items: center;
+      }     
+  }
+  
+  // SERVICES
+  .services {
+    > section {
+        @include flexboxColumn(3vh);
+        align-items: center;
+
+        > aside:nth-child(1) {
+            background-color: $seaGreen;
+        }
+
+        > aside:nth-child(2) {
+            background-color: $orange;
+        }
+
+        > aside:nth-child(3) {
+            background-color: $blue;
+        }
+
+        > aside:nth-child(4) {
+            background-color: $green;
+        }
+    }
+    
+      aside {
+          min-height: 45vh;
+          width: 90%;
+          @include flexboxColumn(2vh);
+          @include flexCenter;
+    
+          p {
+            color: whitesmoke;
+            text-align: center;
+            width: 60%;
+            font-size: 17px;
+          }
+    }
+    
+      h4 {
+        border-bottom: 1px solid whitesmoke;
+        padding-bottom: 1vh;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 400;  
+      }
+    
+      i {
+        display: none;
+      }
+  }
+  
+  // PORTFOLIO
+  .portfolio {
+    > section {
+        width: 93%;
+        row-gap: 3vh;
+    }
+
+    figcaption {
+      display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+  }
+}

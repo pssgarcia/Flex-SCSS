@@ -12,11 +12,20 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: dimgray;
+  line-height: 1.5;
+}
+
 main h2 {
   color: dimgray;
   border-bottom: 1px solid dimgray;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+.row h2 {
+  font-weight: 700;
 }
 
 small {
@@ -32,5 +41,6 @@ figcaption,
 main,
 main > section,
 main > section > article {
-  @include flexboxCenter(center,center); 
+  display: flex;
+  flex-direction: column; 
 }
