@@ -3,6 +3,40 @@
     row-gap: 10vh;
     padding-top: 5vh;
   }
+
+  nav > ul {
+    display: none;
+  }
+
+  header {
+      height: 40vh;
+      > section {
+        align-items: center;
+        row-gap: 4vh;
+        background-color: rgba(50, 50, 50, 0.59);
+        height: 100%;
+        width: 100%;
+        > ul {
+          display: none;
+        }
+        
+        > article {
+              align-items: center;
+              color: whitesmoke;
+              row-gap: 2vh;
+          }
+      }
+
+    article > a {
+        color: whitesmoke;
+        background-color: $defaultColor;
+        border-radius: 5px;
+        padding: 3%;
+        font-weight: 400;
+        text-align: center;
+        width: 50%;
+    }
+  }
   
   img {
     width: 30%;
@@ -172,5 +206,5 @@
           color: whitesmoke;
       }
   }
-  
+
 }
