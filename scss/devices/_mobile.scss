@@ -17,7 +17,7 @@
         height: 100%;
         width: 100%;
         > ul {
-          display: none;
+            display: none;
         }
         
         > article {
@@ -207,4 +207,57 @@
       }
   }
 
+  // CONTACT
+  .contact {
+      > section > article {
+          @include flexboxColumn(2vh);
+          width: 90%;
+          font-size: 14px;
+      }
+
+      > section > section {
+          width: 90%
+      }
+
+      ul {
+          @include flexboxColumn(1vh);
+          color: dimgray;
+          a {
+              color: $defaultColor;
+          }
+      }
+
+      li {
+          display: flex;
+          column-gap: 1vh;
+          font-size: 12px;
+        }
+    }
+}
+
+form {
+    width: 100%;
+    row-gap: 2vh;
+}
+
+input {
+    height: 6vh;
+    border: 1px solid lightgray;
+}
+
+::placeholder {
+    padding: 2vw;
+    color: darkgray;
+}
+
+textarea {
+    border: 1px solid lightgray;
+    height: 15vh;
+    resize: none;
+}
+
+[type= "submit"] {
+    background-color: $defaultColor;
+    color: whitesmoke;
+    border: 3px solid transparent
 }
