@@ -141,7 +141,23 @@
   // TEAM
 
   // TEAM - GALLERY
+  .team-gallery {
+      @include flexboxColumn(3vh);
 
+      > figure {
+          align-items: center;
+      }
+
+      img {
+          width: 80%;
+          height: 40vh;
+          border-radius: 50%;
+      }
+
+      figcaption {
+          display: none;
+      }
+  }
   // TEAM - SKILLS
   .skills {
       @include flexboxColumn(5vh);
@@ -260,4 +276,19 @@ textarea {
     background-color: $defaultColor;
     color: whitesmoke;
     border: 3px solid transparent
+}
+
+// FOOTER
+footer {
+    padding-top: 10vh;
+    @include flexboxColumn(2vh);
+    align-items: center;
+    font-size: 13px;
+    a {
+        background-color: $defaultColor;
+        padding: 3%;
+        color: whitesmoke;
+        text-align: center;
+        width: 50%;
+    }
 }
