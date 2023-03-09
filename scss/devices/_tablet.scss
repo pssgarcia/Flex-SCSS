@@ -47,6 +47,19 @@
       border: 0px none transparent;      
   }
 
+  // SERVICES
+  .services {
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        aside {
+            width: 40%;
+            min-height: 30vh;
+        }
+  }
+
   // TEAM GALLERY
   .team-gallery {
         flex-direction: row;
@@ -120,6 +133,25 @@
           height: 100%;
           position: absolute;
       }
+  }
+
+  // SKILLS
+  .skills {
+        align-items: center;
+        > section {
+                width: 90%;
+                flex-direction: row;
+                align-items: flex-start;
+                column-gap: 3vw;
+        }
+
+        li {
+            height: 4vh;
+        }
+
+        small {
+            font-size: 14px;
+        }
   }
   
   // CONTACT
