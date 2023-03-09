@@ -252,4 +252,14 @@
             }
           }
     }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        a {
+            width: 20%;
+            padding: 2%;
+        }
+    }
 }
