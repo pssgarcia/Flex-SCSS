@@ -1,0 +1,30 @@
+@media (min-width: $tabletScreen) {
+    // CONTACT
+    .contact {
+        > section {
+            width: 90%;
+            flex-direction: row;
+            column-gap: 4vw;
+            align-items: flex-start; 
+        }
+
+        input {
+            height: 4vh;
+        }
+
+        textarea {
+            height: 12vh;
+        }
+
+        [type="submit"] {
+            border: 3px solid $defaultColor;
+            transition: .6s;
+
+            &:hover {
+                background-color: transparent;
+                color: $defaultColor;
+                cursor: pointer;
+            }
+          }
+    }
+}
