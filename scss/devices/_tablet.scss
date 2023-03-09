@@ -46,6 +46,81 @@
   details li > a {
       border: 0px none transparent;      
   }
+
+  // TEAM GALLERY
+  .team-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: unset;
+        justify-content: center;
+        column-gap: 2vh;
+
+        figcaption {
+            display: flex;
+            visibility: hidden;
+        }
+
+      figure {
+          width: 30vh;
+          height: 25vh;
+          position: relative;
+          border-radius: 50%;
+          display: flex;
+          justify-content: flex-end;
+          overflow: hidden;
+
+          &:hover figcaption {
+              height: 100%;
+              visibility: visible;
+          }
+      }
+
+      figcaption {
+          z-index: 2;
+          position: absolute;
+          display: flex;
+          width: 100%;
+          height: 0%;
+          transition: .6s;
+          background-color: rgba($color: $defaultColor, $alpha: 0.8);
+          @include flexCenter;
+          color: whitesmoke;
+          row-gap: 1vh;
+          > h4 {
+              border-bottom: 1px solid whitesmoke;
+              padding-bottom: 1vh;
+          }
+
+          aside {
+              display: flex;
+              column-gap: 1vh;          
+          }
+
+          a {
+              background-color: white;
+              display: flex;
+              @include flexCenter;
+              color: $defaultColor;
+              font-size: 18px;
+              border-radius: 50%;
+              width: 3vh;
+              height: 3vh;
+
+              &:hover {
+                  background-color: $defaultColor;
+                  color: whitesmoke;
+              }
+          }
+
+      }
+
+      img {
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+      }
+  }
   
   // CONTACT
     .contact {
