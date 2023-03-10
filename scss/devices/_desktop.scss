@@ -1,0 +1,25 @@
+@media (min-width: $desktopScreen) {
+  // CONTACT
+  .contact {
+      h2 {
+          font-size: 30px;
+          font-weight: 400;
+      }
+
+      > article > p {
+          font-size: 18px;
+      }
+
+      input {
+          height: 7vh;
+      }
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  [type="submit"] {
+      font-size: 20px;
+  }
+}

@@ -41,7 +41,29 @@
               color: whitesmoke;
           }
       }
-  }  
+  }
+  
+  nav {
+        width: 80%;
+        
+        [class*="fan"] {
+            padding: 1%;
+        }
+  }
+
+  details {
+        > ul {
+            top: 4vh;
+        }
+
+        > summary {
+            padding: 2%;
+        }
+
+        a:hover {
+            color: $defaultColor;
+        }
+  }
 
   details li > a {
       border: 0px none transparent;      
@@ -252,7 +274,7 @@
             }
           }
     }
-
+    // FOOTER
     footer {
         flex-direction: row;
         justify-content: space-between;
