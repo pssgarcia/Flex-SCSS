@@ -11,6 +11,51 @@
           }
       }
   }
+
+  // SERVICES 
+  .services {
+      > section {
+          justify-content: center;
+          column-gap: 2vw;
+      }
+
+      aside {
+          width: 20vw;
+          > p {
+              font-size: 14px;
+              opacity: 0;
+              transition: .6s;
+          }
+
+          h4 {
+              opacity: 0;
+              display: none;
+              transition: .6s;
+          }
+
+          > i {
+              display: block;
+              font-size: 36px;
+              position: absolute;
+              opacity: 1;
+              transition: .6s;
+              color: white;
+          }
+      }
+
+      aside:hover {
+          cursor: pointer;
+          > p,
+          > h4 {
+              transition: .6s;
+              opacity: 1;
+          }
+
+          i {
+              opacity: 0;
+          }
+      }
+  }
   
   // TEAM GALLERY 
   .team-gallery {
